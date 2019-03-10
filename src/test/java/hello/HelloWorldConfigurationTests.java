@@ -49,7 +49,7 @@ public class HelloWorldConfigurationTests {
     @Before
     public void setup() {
         RestAssured.baseURI = "http://localhost";
-        RestAssured.port = 8080;
+        RestAssured.port = port;
     }
     @Test
     public void testGreeting() throws Exception {
@@ -63,7 +63,9 @@ public class HelloWorldConfigurationTests {
        Response response = RestAssured.given()
                .body("Hello Docker World")
                .when()
-               .get("/");
+               .get("/")
+
+               ;
        Assert.assertEquals("Hello Docker World", response.body().asString());
 //      assertThat("", equals(response.body().asString()));
    }
