@@ -17,6 +17,10 @@ package hello;
 
 import static org.junit.Assert.*;
 
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,11 +31,13 @@ import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.annotation.DirtiesContext;
+import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+@SpringBootTest(webEnvironment = WebEnvironment.DEFINED_PORT)
 @DirtiesContext
+@TestPropertySource("classpath:application.yml")
 public class HelloWorldConfigurationTests {
 
     @LocalServerPort
@@ -40,11 +46,26 @@ public class HelloWorldConfigurationTests {
     @Autowired
     private TestRestTemplate restTemplate;
 
+    @Before
+    public void setup() {
+        RestAssured.baseURI = "http://localhost";
+        RestAssured.port = 8080;
+    }
     @Test
     public void testGreeting() throws Exception {
         ResponseEntity<String> entity = restTemplate
                 .getForEntity("http://localhost:" + this.port + "/", String.class);
         assertEquals(HttpStatus.OK, entity.getStatusCode());
     }
+
+   @Test
+    public void testGreetingMessage() throws Exception {
+       Response response = RestAssured.given()
+               .body("Hello Docker World")
+               .when()
+               .get("/");
+       Assert.assertEquals("Hello Docker World", response.body().asString());
+//      assertThat("", equals(response.body().asString()));
+   }
 
 }
