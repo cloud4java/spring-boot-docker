@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd308389-b44e-471b-8c7f-f0c0586f559e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application-tests.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/HelloWorldConfigurationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/HelloWorldConfigurationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/Application.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,11 +22,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="91">
+              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
               <folding>
                 <element signature="e#400#401#0" expanded="true" />
                 <element signature="e#443#444#0" expanded="true" />
@@ -38,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -50,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/hello/HelloWorldConfigurationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+            <state relative-caret-position="108">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
             </state>
           </provider>
         </entry>
@@ -79,10 +76,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/Application.java" />
         <option value="$PROJECT_DIR$/src/test/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/test/java/hello/HelloWorldConfigurationTests.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/Application.java" />
       </list>
     </option>
   </component>
@@ -121,21 +118,6 @@
               <item name="spring-boot-docker" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gs-spring-boot-docker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-docker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gs-spring-boot-docker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-docker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -143,21 +125,6 @@
               <item name="spring-boot-docker" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gs-spring-boot-docker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-docker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gs-spring-boot-docker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-docker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gs-spring-boot-docker" type="b2602c69:ProjectViewProjectNode" />
@@ -190,7 +157,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552235720898" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552245341747" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
@@ -325,18 +292,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HelloWorldConfigurationTests - 2019.03.10 at 13h 21m 46s.xml">
-      <configuration name="HelloWorldConfigurationTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HelloWorldConfigurationTests - 2019.03.10 at 13h 22m 38s.xml">
-      <configuration name="HelloWorldConfigurationTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HelloWorldConfigurationTests - 2019.03.10 at 13h 23m 36s.xml">
-      <configuration name="HelloWorldConfigurationTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HelloWorldConfigurationTests_testGreetingMessage - 2019.03.10 at 13h 26m 28s.xml">
-      <configuration name="HelloWorldConfigurationTests.testGreetingMessage" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HelloWorldConfigurationTests_testGreetingMessage - 2019.03.10 at 13h 26m 55s.xml">
       <configuration name="HelloWorldConfigurationTests.testGreetingMessage" configurationId="JUnit" />
     </history-entry>
@@ -355,12 +310,24 @@
     <history-entry file="HelloWorldConfigurationTests - 2019.03.10 at 13h 32m 06s.xml">
       <configuration name="HelloWorldConfigurationTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="HelloWorldConfigurationTests - 2019.03.10 at 13h 32m 45s.xml">
+      <configuration name="HelloWorldConfigurationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HelloWorldConfigurationTests - 2019.03.10 at 13h 34m 04s.xml">
+      <configuration name="HelloWorldConfigurationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HelloWorldConfigurationTests - 2019.03.10 at 13h 34m 30s.xml">
+      <configuration name="HelloWorldConfigurationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HelloWorldConfigurationTests - 2019.03.10 at 13h 35m 18s.xml">
+      <configuration name="HelloWorldConfigurationTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="25" width="1327" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21867704" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21867704" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -371,8 +338,8 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329582" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34726688" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3279743" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34726688" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5916399" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -416,18 +383,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/application-tests.yml">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="7" selection-start-column="7" selection-end-column="7" />
@@ -436,15 +392,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hello/HelloWorldConfigurationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+        <state relative-caret-position="108">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
