@@ -61,13 +61,11 @@ public class HelloWorldConfigurationTests {
    @Test
     public void testGreetingMessage() throws Exception {
        Response response = RestAssured.given()
-               .body("Hello Docker World")
                .when()
                .get("/")
 
                ;
-       Assert.assertEquals("Hello Docker World", response.body().asString());
-//      assertThat("", equals(response.body().asString()));
+       Assert.assertEquals("Hello Docker World.", response.body().asString());
    }
 
 }
