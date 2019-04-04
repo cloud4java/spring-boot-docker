@@ -49,7 +49,7 @@ public class HelloWorldConfigurationTests {
     @Before
     public void setup() {
         RestAssured.baseURI = "http://localhost";
-        RestAssured.port = 8080;
+        RestAssured.port = 8081;
     }
     @Test
     public void testGreeting() throws Exception {
