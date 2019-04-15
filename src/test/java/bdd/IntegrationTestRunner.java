@@ -10,7 +10,9 @@ import org.springframework.test.context.ContextConfiguration;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty"}, glue = {"bdd.steps"}, features = "src/test/resources/bdd/features")
+@CucumberOptions(
+        plugin= {"pretty","html:target/cucumber","json:target/cucumber.json","junit:target/cukes.xml"},
+glue = {"bdd.steps"}, features = "src/test/resources/bdd/features")
 
 
 @ContextConfiguration
