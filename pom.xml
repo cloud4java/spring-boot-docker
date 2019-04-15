@@ -22,11 +22,40 @@
         <java.version>1.8</java.version>
         <maven.failsafe.version>2.22.0</maven.failsafe.version>
         <cucumber.version>4.2.6</cucumber.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>        
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <build>
         <plugins>
+
+            <!-- INTEGRATION TEST -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.22.0</version>
+
+                <configuration>
+                    <argLine>-Xmx8g</argLine>
+                    <includes>
+                        <!--                        <include>**/*IT.java</include>-->
+                        <include>**/*Runner.java</include>
+                    </includes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>execution1</id>
+                        <phase>test</phase>
+                    </execution>
+                    <execution>
+                        <goals>
+                            <goal>verify</goal>
+                            <goal>integration-test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -68,37 +97,37 @@
             <!-- end::unpack[] -->
         </plugins>
     </build>
+    <!--
+        <profiles>
+            &lt;!&ndash;Profile para testes integrados - Integration Tests&ndash;&gt;
+            <profile>
+                <id>IT</id>
+                <build>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-failsafe-plugin</artifactId>
+                            <version>${maven.failsafe.version}</version>
+                        </plugin>
 
-    <profiles>
-        <!--Profile para testes integrados - Integration Tests-->
-        <profile>
-            <id>IT</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-failsafe-plugin</artifactId>
-                        <version>${maven.failsafe.version}</version>
-                    </plugin>
+                        &lt;!&ndash; Maven Failsafe Plugin &ndash;&gt;
+                        <plugin>
+                            <artifactId>maven-failsafe-plugin</artifactId>
+                            <executions>
+                                <execution>
+                                    <goals>
+                                        <goal>integration-test</goal>
+                                        <goal>verify</goal>
+                                    </goals>
+                                </execution>
+                            </executions>
+                        </plugin>
+                    </plugins>
+                </build>
 
-                    <!-- Maven Failsafe Plugin -->
-                    <plugin>
-                        <artifactId>maven-failsafe-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>integration-test</goal>
-                                    <goal>verify</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-
-        </profile>
-    </profiles>
-
+            </profile>
+        </profiles>
+    -->
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -119,7 +148,7 @@
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
         </dependency>
-        
+
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
@@ -140,7 +169,7 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-        
+
     </dependencies>
 
 </project>
